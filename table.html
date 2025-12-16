@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>테이블 표현</h1>
+    <table border="1">
+      <caption>학생 성적표</caption>
+      <thead>
+          <tr>
+            <th>학생이름</th>
+            <th>평균</th>
+            <th>등수</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>레드</td>
+          <td>96.7</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>블루</td>
+          <td>98.5</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>전체 합</td>
+          <td colspan="2">195.2</td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="1">
+      <tr>
+        <td colspan="2">2개 열 병합</td>
+      </tr>
+      <tr>
+        <td rowspan="2">2개 행 병합</td>
+        <td>일반 셀</td>
+      </tr>
+      <tr>
+        <td>일반 셀</td>
+      </tr>
+    </table>
+</body>
+</html>
