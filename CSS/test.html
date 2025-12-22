@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .flex-container {
+        display: flex;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1;
+      }
+      .aside-items {
+        border: none;
+      }
+      div {
+        border: 1px solid black;
+      }
+      .header {
+        height: 70px;
+        background-color: lightcyan;
+      }
+
+      .aside {
+        width: 150px;
+        background-color: gray;
+      }
+      .content {
+        display: flex;
+        flex: 1;
+      }
+      .main {
+        /* flex: 1; */
+        flex-grow: 1;
+        background-color: beige;
+      }
+      .logo {
+        margin: 3px;
+        width: 35px;
+      }
+      .search {
+        margin: 3px;
+        width: 200px;
+      }
+      .gnb {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 3px;
+        margin-left: auto;
+      }
+      .header-item {
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer-container {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+      }
+      .footer {
+        height: 100px;
+        margin-top: auto;
+      }
+      .input-component {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+      .dynamic-width-container {
+        display: flex;
+      }
+      .dynamic-item {
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="logo">logo</div>
+      <div class="search">search</div>
+      <div class="gnb">gnb</div>
+    </div>
+    <div class="wrap">
+      <div class="header-item">
+        <div>나에 대하여</div>
+        <div>나의 취미</div>
+        <div>나의 전공</div>
+      </div>
+      <div class="header">상위 메뉴 1</div>
+      <div class="content">
+        <div class="aside">좌측 메뉴</div>
+        <div class="main">
+          <div class="aside-items">
+            <div class="input-component">
+              <label>line1</label>
+              <input type="text" />
+            </div>
+            <div class="input-component">
+              <label>line2<br />line2</label>
+              <input type="text" />
+            </div>
+            <div class="dynamic-width-container">
+              <div>box1</div>
+              <div>box2</div>
+              <div>box3</div>
+              <div>box4</div>
+              <div class="dynamic-item">
+                <div>box5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer"></div>
+      </div>
+      <div>기타정보</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border_Color</title>
+</head>
+<style>
+    /* 참고: "border-color" 속성은 단독으로 사용하면 작동하지 않습니다. 테두리를
+    설정하려면 항상 "border-style" 속성을 먼저 지정해야 합니다. */
+    
+    p.one {
+        border-style: solid;
+        border-color: rgb(255, 0, 0);
+    }
+    
+    p.two {
+        border-style: outset;
+        border-color: hsl(100, 75%, 50%);
+    }
+    
+    p.three {
+        border-style: double;
+        border-color: #0000ff;
+    }
+    
+    p.four {
+        border-style: inset;
+        border-color: skyblue orange gray yellow;
+    }
+</style>
+
+<body>
+    <h1>Border-color</h1>
+    <p class="one">Red border</p>
+    <p class="two">Green border</p>
+    <p class="three">Blue border</p>
+    <p class="four">Multicolor border</p>
+</body>
+
+</html>

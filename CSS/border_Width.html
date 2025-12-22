@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border_Width</title>
+
+    <style>
+        /* 참고: "border-width" 속성은 단독으로 사용하면 작동하지 않습니다. 테두리를
+    설정하려면 항상 "border-style" 속성을 먼저 지정해야 합니다. */
+        
+        p.one {
+            border-style: solid;
+            border-style: 5px;
+        }
+        
+        p.two {
+            border-style: dotted;
+            border-width: medium;
+        }
+        
+        p.three {
+            border-style: double;
+            border-width: thick;
+        }
+        
+        p.four {
+            border-style: groove;
+            border-width: 15px;
+        }
+        /* Specific Side Widths */
+        
+        p.five {
+            border-style: solid;
+            border-width: 5px 20px;
+            /* 5px은 상,하 20px은 좌,우 */
+        }
+        
+        p.six {
+            border-style: ridge;
+            border-width: 20px 10px 20px;
+            /* 20px 상 5px 좌,우 20px 하*/
+        }
+        
+        p.seven {
+            border-style: outset;
+            border-width: 25px 10px 10px 25px;
+            /* 각자 배치 */
+        }
+    </style>
+</head>
+
+<body>
+    <p>Basic Border Width</p>
+    <p class="one">Basic Border Width</p>
+    <p class="two">Medium Border Width</p>
+    <p class="three">Thick Border Width</p>
+    <p class="four">Big border Width</p>
+    <br /><br />
+    <p>Specific Border Width</p>
+    <p class="five">Two pixel of border-width</p>
+    <p class="six">Three pixel of border-wdith</p>
+    <p class="seven">All of pixel(4) of border-width</p>
+
+    <!-- 참고: "border-width" 속성은 단독으로 사용하면 작동하지 않습니다. 테두리를
+    설정하려면 항상 "border-style" 속성을 먼저 지정해야 합니다. -->
+</body>
+
+</html>
