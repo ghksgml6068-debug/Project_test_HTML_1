@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div {
-            border: 1px solid black;
-            background-color: lightblue;
-            padding: 50px 30px 50px 80px;
-            margin: 50px 50px 50px 50px;
-        }
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 1px solid black;
+        margin: 1px;
+        padding: 1px;
+      }
+
+      .item {
+        border: 1px solid black;
+        max-height: 137px;
+        max-width: 400px;
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div>
-        <img src="https://i.namu.wiki/i/gAM4-F3X3fIG1RgM4waHdWvn6X0KZEuCUf_r7c-UvLpP7BDlrE_jm2iJxLWrLCUuBfbelI_O3SPk1dG0VMO759LYwzZe-hpsMRpltsC9uO0RnsyiXAzRBmYPvm1DUx6rx_2EU-w47xYXGID28AduGQ.webp" alt="골든 리트리버" width="200" height="138" />
+  <body>
+    <h1>내가 좋아하는 사진들</h1>
+    <div class="container">
+      <div class="item">
+        <img
+          src="https://i.namu.wiki/i/gAM4-F3X3fIG1RgM4waHdWvn6X0KZEuCUf_r7c-UvLpP7BDlrE_jm2iJxLWrLCUuBfbelI_O3SPk1dG0VMO759LYwzZe-hpsMRpltsC9uO0RnsyiXAzRBmYPvm1DUx6rx_2EU-w47xYXGID28AduGQ.webp"
+          alt="골든 리트리버"
+          width="200"
+          height="137"
+        />골든 리트리버
+      </div>
+      <div class="item">
+        <img
+          src="https://image.edaily.co.kr/images/photo/files/NP/S/2024/05/PS24052400885.jpg"
+          alt="시바견"
+          width="200"
+        />시바견
+      </div>
+      <div class="item">
+        <img
+          src="https://img.insight.co.kr/static/2024/07/30/700/img_20240730155932_wr3h3a5b.webp"
+          alt="치와와"
+          width="200"
+          height="137"
+        />치와와
+      </div>
+      <div class="item">
+        <img
+          src="https://item.kakaocdn.net/do/6c184af39dc02168629450b1480476c5f43ad912ad8dd55b04db6a64cddaf76d"
+          alt="문상훈"
+          width="200"
+          height="137"
+        />문상훈
+      </div>
+      <div class="item">
+        <img
+          src="https://i.namu.wiki/i/8MW0ka83XpDlcjtuz9SL__UalvMvUzDTZBgJEWTb-hHzGnLHzjB6h4yy9xVrezfCW3gHLSWFemE0kUHNhR7vXWIrq5nmnvQfPj127jL3Zaxn1SjXR74T6OUt10HEM5wSxLj1mhwmIotDekaLseSUwA.webp"
+          alt="닥스훈트"
+          width="200"
+          height="137"
+        />닥스훈트
+      </div>
+      <div class="item">
+        <img
+          src="https://dimg.donga.com/wps/NEWS/IMAGE/2015/12/30/75650303.2.jpg"
+          alt="도베르만"
+          width="200"
+          height="137"
+        />도베르만
+      </div>
+      <div class="item">
+        <img
+          src="https://pbs.twimg.com/media/FXb2gutagAIJEeL?format=jpg&name=small"
+          alt="백구"
+          width="200"
+          height="137"
+        />백구
+      </div>
+      <div class="item">
+        <img
+          src="https://mblogthumb-phinf.pstatic.net/MjAyMDEyMTRfMjgy/MDAxNjA3ODcyNTE4ODk1.yhmfWlPS0fFdSJXo__JKzr0Otevt7igRNvr5kO4f3JMg.Eqddp0ZCihou5Jvn9KWhgW99lWpVUAsD_oDccCC-34cg.JPEG.sosohan_n/24_(14).jpg?type=w966"
+          alt="힌둥이"
+          width="200"
+          height="137"
+        />흰둥이
+      </div>
+      <div class="item">
+        <img src="김효린.jpg" alt="김효린" width="200" height="137" />김효린
+      </div>
     </div>
-    <div>
-        <img src="https://image.edaily.co.kr/images/photo/files/NP/S/2024/05/PS24052400885.jpg" alt="시바견" width="200" />
-    </div>
-    <div>
-        <img src="https://img.insight.co.kr/static/2024/07/30/700/img_20240730155932_wr3h3a5b.webp" alt="치와와" width="200" height="137" />
-    </div>
-    <div>
-        <img src="https://item.kakaocdn.net/do/6c184af39dc02168629450b1480476c5f43ad912ad8dd55b04db6a64cddaf76d" alt="문상훈" width="200" height="137" />
-    </div>
-    <div>
-        <img src="https://i.namu.wiki/i/8MW0ka83XpDlcjtuz9SL__UalvMvUzDTZBgJEWTb-hHzGnLHzjB6h4yy9xVrezfCW3gHLSWFemE0kUHNhR7vXWIrq5nmnvQfPj127jL3Zaxn1SjXR74T6OUt10HEM5wSxLj1mhwmIotDekaLseSUwA.webp" alt="닥스훈트" width="200" height="137" />
-    </div>
-    <div>
-        <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2015/12/30/75650303.2.jpg" alt="도베르만" width="200" height="137" />
-    </div>
-    <div>
-        <img src="https://www.tiktok.com/@team7funny/video/7352496780594007302?is_from_webapp=1&sender_device=pc" alt="패드로" width="200" height="137" />
-    </div>
-    <div>
-        <img src="https://pbs.twimg.com/media/FXb2gutagAIJEeL?format=jpg&name=small" width="200" height="137" />
-    </div>
-</body>
-
+  </body>
 </html>

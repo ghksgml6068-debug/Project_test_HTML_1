@@ -62,29 +62,33 @@
       .footer_container {
         margin-top: auto;
       }
-      .input_component {
-        display: flex;
-        justify-content: center;
-        border: none;
-      }
-      .input_component input {
-        flex: none;
-      }
-      .input_component label, .input_component input {
-        align-self: center;
-      }
-      .dynamic_width_container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: 300px;
-      }
       .dynamic_item {
         min-width: 350px;
-        max-width: 400px; /* 최대 폭은 250픽셀*/
+        max-width: 250px; /* 최대 폭은 250픽셀*/
         overflow: hidden; /* 내용물을 제한된 크기에 표현못하면 내용물을 짤린 부분만 보여라 */
-        text-overflow: ellipsis; /*내용물이 출력할 크키를 넘으면 ... 표시해라*/
+        text-overflow: ellipsis; /*내용물이 출력할 크기를 넘으면 ... 표시해라*/
         white-space: nowrap; /*줄바꿈을 표현하지 마라*/
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 1px solid black;
+        margin: 1px;
+        padding: 1px;
+      }
+
+      .item {
+        border: 1px solid black;
+        max-height: auto;
+        max-width: 400px;
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
       }
     </style>
   </head>
@@ -104,23 +108,74 @@
       </header>
       <main class="flex_main">
         <div class="main_item1">좌측 메뉴</div>
-        <div class="main_item2">
-          <!-- <span style="margin: auto">컨텐츠 내용들</span> -->
-          <div class="input_component">
-            <label>line1</label>
-            <input type="text">
-          </div>
-          <div class="input_component">
-            <label>line1<br/>line2</label>
-            <textarea cols="40" rows="6"></textarea>
-          </div>
-          <div class="dynamic_width_container">
-            <div class="dynamic_item">box 1 은 있습니다.<br/>box 1-1 <br> box1=2 <br> box1=3</div>
-            <div class="dynamic_item">box 2 의 내용물은 매우 많습니다. <br> box2-2<br> box2-2<br> box2-2<br> box2-2</div>
-            <div class="dynamic_item">box 3 내용물<br> box3-2<br> box3-2<br> box3-2</div>
-            <div class="dynamic_item">box 4 내용물<br> box4-2<br> box4-2</div>
-            <div class="dynamic_item" style="margin-left: auto;">box 5 의 내용물은 매우 매우 매우 매우 많습니다.<br> box5-2</div>
-          </div>
+    <div class="container">
+      <div class="item">
+        <img
+          src="https://i.namu.wiki/i/gAM4-F3X3fIG1RgM4waHdWvn6X0KZEuCUf_r7c-UvLpP7BDlrE_jm2iJxLWrLCUuBfbelI_O3SPk1dG0VMO759LYwzZe-hpsMRpltsC9uO0RnsyiXAzRBmYPvm1DUx6rx_2EU-w47xYXGID28AduGQ.webp"
+          alt="골든 리트리버"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://image.edaily.co.kr/images/photo/files/NP/S/2024/05/PS24052400885.jpg"
+          alt="시바견"
+          width="200"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://img.insight.co.kr/static/2024/07/30/700/img_20240730155932_wr3h3a5b.webp"
+          alt="치와와"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://item.kakaocdn.net/do/6c184af39dc02168629450b1480476c5f43ad912ad8dd55b04db6a64cddaf76d"
+          alt="문상훈"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://i.namu.wiki/i/8MW0ka83XpDlcjtuz9SL__UalvMvUzDTZBgJEWTb-hHzGnLHzjB6h4yy9xVrezfCW3gHLSWFemE0kUHNhR7vXWIrq5nmnvQfPj127jL3Zaxn1SjXR74T6OUt10HEM5wSxLj1mhwmIotDekaLseSUwA.webp"
+          alt="닥스훈트"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://dimg.donga.com/wps/NEWS/IMAGE/2015/12/30/75650303.2.jpg"
+          alt="도베르만"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://pbs.twimg.com/media/FXb2gutagAIJEeL?format=jpg&name=small"
+          alt="백구"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://mblogthumb-phinf.pstatic.net/MjAyMDEyMTRfMjgy/MDAxNjA3ODcyNTE4ODk1.yhmfWlPS0fFdSJXo__JKzr0Otevt7igRNvr5kO4f3JMg.Eqddp0ZCihou5Jvn9KWhgW99lWpVUAsD_oDccCC-34cg.JPEG.sosohan_n/24_(14).jpg?type=w966"
+          alt="힌둥이"
+          width="200"
+          height="137"
+        />
+      </div>
+      <div class="item">
+        <img src="김효린.jpg" alt="김효린" width="200" height="137" />
+      </div>
+    </div>
         </div>
       </main>
       <footer class="footer_container">
